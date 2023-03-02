@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>register</title>
     <style>
         *{
             margin: 0;
@@ -17,11 +17,10 @@
         }
         #body{
             width: 28%;
-            height: 540px;
+            height: 400px;
             margin: auto;
-            margin-top: 10px;
+            margin-top: 60px;
             background-color: white;
-            
         }
         #body>div:nth-child(1)>img{
             width: 100%;
@@ -53,6 +52,7 @@
             font-size: 9.9px;
             font-weight: bold;
         }
+
     </style>
 </head>
 
@@ -62,21 +62,16 @@
             <img src="./image/myntra.png" alt="1" />
         </div>
         <div>
-            <h4>Register</h4>
-            <form onsubmit="register(event)">
-                <label>Name:</label><br />
-                <input id="userName" type="text" /><br />
-                <label>Mobile Number:</label><br />
-                <input id="userNumber" type="number" /><br />
-                <label>Email:</label><br />
-                <input id="userEmail" type="email" /><br />
-                <label>Password:</label><br />
-                <input id="userPassword" type="password" /><br /><br />
-                <p>By registered, I agree to the Terms of Use & Privacy Policy</p>
-                <input style="background-color: #ff3f6c; color: white; border: none; outline: none; height: 30px; font-size: 10px; font-weight: bold; cursor: pointer; margin-top: 15px;" type="Submit" value="LOGIN" />
-                <p style="margin-top: 20px;">Have trouble logging in? Get help</p>
+            <h1>Login</h1>
+            <form onsubmit="login(event)">
+                <label>Email</label><br />
+                <input id="email" type="email" /><br />
+                <label>Password</label><br />
+                <input id="password" type="password" /><br />
+                <input style="background-color: #ff3f6c; color: white; border: none; outline: none; height: 30px; font-size: 10px; font-weight: bold; cursor: pointer; margin-top: 15px;" type="submit" value="Register"/>
+                <p style="margin-top: 20px;">Have trouble registered? Get help</p>
             </form>
-            <!-- <button onclick="window.location.href='/login.html'">Register</button> -->
+            <!-- <button  onclick="window.location.href='/login.html'">Login</button> -->
         </div>
     </div>
     <script src="/script.js"></script>

@@ -116,6 +116,7 @@ function addToLS(){
     dataFromLS.push(product);
 
     localStorage.setItem("products", JSON.stringify(dataFromLS));
+    window.location.href = '/show-products.html';
     alert("Product submited!")
 
 }

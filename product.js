@@ -1,7 +1,7 @@
 window.onload = function () {
     // alert("Window loaded!")
 
-    var products = JSON.parse(localStorage.getItem("addProducts"));
+    var products = JSON.parse(localStorage.getItem("products"));
 
     var divFromHtml = document.getElementById("picture");
 

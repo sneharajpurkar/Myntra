@@ -11,6 +11,7 @@
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
         #navbar {
@@ -141,6 +142,7 @@
             height: 420px;
             margin-left: 10px;
             position: relative;
+
         }
 
         #leftside1>img:nth-child(3) {
@@ -170,6 +172,7 @@
         #first {
             margin-top: 10px;
             height: 75px;
+            white-space: nowrap;
         }
 
         #first>p {
@@ -258,12 +261,27 @@
             margin-left: 0px;
         }
 
-        #second>div:nth-child(4)>div:nth-child(2),
-        div:nth-child(3),
-        div:nth-child(4),
-        div:nth-child(5),
-        div:nth-child(6),
-        div:nth-child(7) {
+        #second>div:nth-child(4)>div:nth-child(2) {
+            margin-left: 10px;
+        }
+
+        #second>div:nth-child(4)>div:nth-child(3) {
+            margin-left: 10px;
+        }
+
+        #second>div:nth-child(4)>div:nth-child(4) {
+            margin-left: 10px;
+        }
+
+        #second>div:nth-child(4)>div:nth-child(5) {
+            margin-left: 10px;
+        }
+
+        #second>div:nth-child(4)>div:nth-child(6) {
+            margin-left: 10px;
+        }
+
+        #second>div:nth-child(4)>div:nth-child(7) {
             margin-left: 10px;
         }
 
@@ -334,9 +352,10 @@
 
         #third>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
             display: flex;
+            justify-content: space-around;
             margin-top: 15px;
             height: 30px;
-            width: 182px;
+            width: 200px;
             border: 1px solid #7c7d91;
             border-radius: 3px;
         }
@@ -770,7 +789,7 @@
         }
 
         #middle>div:nth-child(2)>div>div:nth-child(1)>img {
-            width: 169.5px;
+            width: 100%;
             height: 220px;
         }
 
@@ -792,8 +811,8 @@
         }
 
         #middle>div:nth-child(3)>div>div:nth-child(1)>img {
-            width: 169.5px;
-            height: 220px;
+            width: 100%;
+            /* height: 220px; */
         }
 
         #middle>div:nth-child(3)>div>div:nth-child(2) {
@@ -803,103 +822,125 @@
         #middle>div:nth-child(3)>div:nth-child(3) {
             margin-left: 0;
         }
-        #footer{
+
+        #footer {
             width: 100%;
             margin-top: 50px;
             background-color: #fafbfc;
+            margin-top: 10%;
         }
-        #top1{
+
+        #top1 {
             display: flex;
             margin-left: 150px;
             font-size: 13px;
         }
-        #top1>div:nth-child(1){
+
+        #top1>div:nth-child(1) {
             margin-top: 25px;
             height: 250px;
             width: 12%;
         }
-        #top1>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+
+        #top1>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
             font-size: 12px;
         }
-        #top1>div:nth-child(1)>div:nth-child(1)>div:nth-child(2){
+
+        #top1>div:nth-child(1)>div:nth-child(1)>div:nth-child(2) {
             margin-top: 10px;
         }
-        #top1>div:nth-child(1)>div:nth-child(2)>div:nth-child(1){
+
+        #top1>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
             font-size: 12px;
             margin-top: 20px;
         }
-        #top1>div:nth-child(1)>div:nth-child(2)>div:nth-child(2){
+
+        #top1>div:nth-child(1)>div:nth-child(2)>div:nth-child(2) {
             margin-top: 10px;
         }
-        #top1>div:nth-child(2){
+
+        #top1>div:nth-child(2) {
             margin-top: 25px;
             margin-left: 50px;
             height: 180px;
             width: 14%;
         }
-        #top1>div:nth-child(2)>div:nth-child(1){
+
+        #top1>div:nth-child(2)>div:nth-child(1) {
             font-size: 12px;
         }
-        #top1>div:nth-child(2)>div:nth-child(2){
+
+        #top1>div:nth-child(2)>div:nth-child(2) {
             margin-top: 10px;
         }
-        #top1>div:nth-child(3){
+
+        #top1>div:nth-child(3) {
             margin-top: 25px;
             margin-left: 40px;
             height: 120px;
             width: 24%;
         }
-        #top1>div:nth-child(3)>div:nth-child(1){
+
+        #top1>div:nth-child(3)>div:nth-child(1) {
             font-size: 12px;
         }
-        #top1>div:nth-child(3)>div:nth-child(2){
+
+        #top1>div:nth-child(3)>div:nth-child(2) {
             margin-top: 10px;
         }
-        #top1>div:nth-child(3)>div:nth-child(2)>img{
+
+        #top1>div:nth-child(3)>div:nth-child(2)>img {
             height: 30px;
             width: 100px;
             border-radius: 5px;
             margin-right: 8px;
         }
-        #top1>div:nth-child(3)>div:nth-child(3){
+
+        #top1>div:nth-child(3)>div:nth-child(3) {
             margin-top: 10px;
             margin-left: 0;
         }
-        #top1>div:nth-child(3)>div:nth-child(3)>div:nth-child(1){
+
+        #top1>div:nth-child(3)>div:nth-child(3)>div:nth-child(1) {
             font-size: 12px;
         }
-        #top1>div:nth-child(3)>div:nth-child(3)>div:nth-child(2){
+
+        #top1>div:nth-child(3)>div:nth-child(3)>div:nth-child(2) {
             margin-top: 10px;
             font-size: 20px;
             color: #7c7d91;
         }
-        #top1>div:nth-child(3)>div:nth-child(3)>div:nth-child(2)>i{
+
+        #top1>div:nth-child(3)>div:nth-child(3)>div:nth-child(2)>i {
             margin-right: 8px;
         }
-        #top1>div:nth-child(4){
+
+        #top1>div:nth-child(4) {
             margin-top: 25px;
             margin-left: 40px;
             height: 80px;
             width: 19%;
         }
-        #top1>div:nth-child(4)>div:nth-child(2){
+
+        #top1>div:nth-child(4)>div:nth-child(2) {
             margin-top: 15px;
         }
-        #bottom2{
+
+        #bottom2 {
             margin-top: 20px;
             font-size: 13px;
             margin-left: 150px;
             width: 75%;
             margin-bottom: 25px;
         }
-        #bottom2>div:nth-child(1){
+
+        #bottom2>div:nth-child(1) {
             font-size: 12px;
         }
-        #bottom2>div:nth-child(2){
+
+        #bottom2>div:nth-child(2) {
             margin-top: 10px;
         }
-
-
     </style>
 </head>
 
@@ -912,7 +953,7 @@
                         alt="myntra" />
                 </div>
                 <div>
-                    <a>MEN</a>
+                    <a href="./show-products.html">MEN</a>
                     <a>WOMEN</a>
                     <a>KIDS</a>
                     <a>HOME & LIVING</a>
@@ -930,9 +971,9 @@
                 </div>
                 <div>
                     <div><a href="/login.html">
-                        <i class="fa-solid fa-user"></i>
-                        <h6>Profile</h6>
-                    </a>
+                            <i class="fa-solid fa-user"></i>
+                            <h6>Profile</h6>
+                        </a>
                     </div>
                     <div>
                         <i class="fa-solid fa-heart"></i>
@@ -1399,10 +1440,16 @@
                 </div>
                 <div id="bottom2">
                     <div><b>POPULAR SEARCHES</b></div>
-                    <div>Kurta Pajama | Leather Jackets | Sherwani | Shirts | T-Shirts | Waistcoat | Photo Frames | Denim shirts | Blazers | Mirror | Bags | Jackets | Blouse Designs | Crop Tops | Mysore Silk Saree | Kids Lehenga | Suit Design | Lehenga | Girls Dungarees | Top for Girl | Lingerie | Gowns | Saree | Kids Ethnic Wear | Sweaters | Boys Games | Barbie Doll | Shoes For Men | Cricket Shoes | Lipstick | Make Up Kit | Fastrack Watches | Casual Shoes | Online Shopping | Dresses | Babydolls | Eye Makeup | Car Games | Nike Shoes | Puma | United Colors of Benetton | Fastrack | Watches | Backpacks | Men Kurtas | Titan Watches</div>
+                    <div>Kurta Pajama | Leather Jackets | Sherwani | Shirts | T-Shirts | Waistcoat | Photo Frames |
+                        Denim shirts | Blazers | Mirror | Bags | Jackets | Blouse Designs | Crop Tops | Mysore Silk
+                        Saree | Kids Lehenga | Suit Design | Lehenga | Girls Dungarees | Top for Girl | Lingerie | Gowns
+                        | Saree | Kids Ethnic Wear | Sweaters | Boys Games | Barbie Doll | Shoes For Men | Cricket Shoes
+                        | Lipstick | Make Up Kit | Fastrack Watches | Casual Shoes | Online Shopping | Dresses |
+                        Babydolls | Eye Makeup | Car Games | Nike Shoes | Puma | United Colors of Benetton | Fastrack |
+                        Watches | Backpacks | Men Kurtas | Titan Watches</div>
                 </div>
             </div>
         </div>
-    </body>
+</body>
 
 </html>

@@ -21,7 +21,7 @@ function addToCart(pro) {
     var currentUser = JSON.parse(localStorage.getItem("current-user"));
     if(currentUser){
         var allUsers = [];
-        for(var i =0; i < dataFromLS.length ; i++ ){
+        for(var i = 0; i < dataFromLS.length ; i++ ){
             if(dataFromLS[i].email === currentUser["current-user-email"] ){
                 var newObj = dataFromLS[i];
                 newObj["cartProducts"] = newObj["cartProducts"] || [];

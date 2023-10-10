@@ -52,7 +52,7 @@ function login(event) {
         var user = {};
         user["current-user-email"] = userEmail ;
         localStorage.setItem("current-user", JSON.stringify(user))
-        window.location.href = "/show-products.html";
+        window.location.href = "/index.html";
         alert("Logged in successfull.")
     } else {
         alert("Wrong cred, Please check your email and password.");
@@ -96,7 +96,7 @@ function newPassword() {
 
     localStorage.setItem('userData', JSON.stringify(dataFromLS));
     gettingEmail = "";
-    window.location.href = '/login.html';
+    window.location.href = '/register.html';
     alert('Password Changed, Now login.')
 
 }
